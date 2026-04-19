@@ -1,0 +1,23 @@
+# ── Project Specific Data ──
+data/
+chroma_db_data/
+temp_uploads/
+
+# ── Python & Environments ──
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# ── Machine Learning / AI ──
+.cache/
+*.onnx
+*.safetensors
+*.pt
+*.bin
+
+# ── OS Generated Files ──
+.DS_Store
+Thumbs.db

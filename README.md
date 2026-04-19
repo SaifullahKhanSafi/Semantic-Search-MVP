@@ -118,55 +118,15 @@ docker compose exec api python ingest.py
 
 ## 📁 Project Structure
 
-### 🧾 Script to Show Repository Structure
-
-#### Linux / Mac:
-```bash
-tree -I "node_modules|.git|__pycache__" -L 3
-```
-
-#### Windows (PowerShell):
-```powershell
-tree /F /A
-```
-
-#### Python Script (Cross-Platform):
-```python
-import os
-
-def print_tree(start_path=".", prefix=""):
-    files = os.listdir(start_path)
-    files.sort()
-
-    for i, name in enumerate(files):
-        path = os.path.join(start_path, name)
-        connector = "└── " if i == len(files) - 1 else "├── "
-        print(prefix + connector + name)
-
-        if os.path.isdir(path):
-            extension = "    " if i == len(files) - 1 else "│   "
-            print_tree(path, prefix + extension)
-
-if __name__ == "__main__":
-    print_tree()
-```
-
-Run:
-```bash
-python tree.py
-```
-
----
-
-## 📌 Example Structure
 
 ```
-project-khudi/
-├── backend/
-│   ├── main.py
-│   ├── ingestionpipeline.py
-│   ├── ingest.py
-│   └── requirements.txt
+SEMANTIC_SEARCH_MVP/
+├── chrome_db/
+├── datasets/
+├── frontend
+│   ├── public/
+│   └── src/
+│   
 ├── frontend/
 │   ├── src/
 │   └── package.json

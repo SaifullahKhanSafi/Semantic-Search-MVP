@@ -1,8 +1,6 @@
-# Project Khudi: Enterprise RAG & Semantic Search Engine
+# Project Khudi: Semantic Search Engine
 
-An advanced, production-ready **Retrieval-Augmented Generation (RAG)** backend and semantic search system.  
-This project implements a **two-stage retrieval pipeline (Bi-Encoder + Cross-Encoder)** to ensure highly accurate and context-aware document retrieval.
-
+An advanced, semantic search system.  
 ---
 
 ## Architecture & Tech Stack
